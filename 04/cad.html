@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>
+		  Cadastro
+	  </title>
+  </head>
+  <style>
+    div.a {
+      text-align: center;
+      position: center;
+    }
+
+    div.tr {
+	    text-align: center;
+      	    position: center;
+    }
+    div.td {
+	    text-align: center;
+      	    position: center;
+    }
+    div.table {
+	    text-align: center;
+      	    position: center;
+    }
+  </style>
+  <body>
+	  <div class="a">
+		  <h1>Cadastro</h1>
+		  <form method='POST' action="recebe_dados.jsp">
+			  <table border="1">
+			  	<tr>
+				 	 <td>
+						<label for="nome">Nome: </label><br>
+					  	<input type='text' id='nome' name='nome' required>
+				  	</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="senha">Senha: </label><br>
+						<input type="password" id="senha" name="senha">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					  	<label for="email">Email: </label><br>
+					  	<input type='email' id='email' name='email' required>
+				  	</td>
+				</tr>
+				<tr>
+				  	<td>
+					  	<label for="fone">fone: </label><br>
+					  	<input type="tel" id="fone" name="fone" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="(DDD)987654321">
+				  	</td>
+				</tr>
+				<tr>
+				  	<td>
+					  	<label for="dtnasc">Data Nasc: </label><br>
+					  	<input type='date' id='dtnasc' name='dtnasc'>
+				  	</td>
+				</tr>
+				<tr>
+				  	<td>
+					  	<label for="S">Sexo:</label><br>
+					  	<select id="sexo" name="sexo">
+						  	<option value="Fe">Feminino</option>
+						  	<option value="Masc">Masculino</option>
+				  	</td>
+				</tr>
+				<tr>
+				  	<td>
+					  	<label for="estado">Estado</label><br>
+					  	<select id="estado" name="estado">
+						  	<option value="PI">PI</option>
+						  	<option value="CE">CE</option>
+						  	<option value="MA">MA</option>
+					  	</select>  
+				  	</td>
+				</tr>
+				<tr>
+				  	<td>
+					  	<label for="Interesses">Interesses: </label><br>
+					  	<select id="interesse" name="inter">
+						  	<option value="Po">Politica</option>
+						  	<option value="ecn">Economia</option>
+						  	<option value="fut">Futebol</option>
+						  	<option value="cel">Celebridade</option>
+					  	</select>
+				<tr>
+					<td>
+						<label for="msg">Mensagem</label><br>
+						<textarea id="msg" name="msg" rows="4" cols="50"></textarea><br>
+						<input type="reset" value="Reset">
+						<input type="submit" value="Enviar">
+					</td>
+			  	</tr>
+			</table>
+		  </form>
+	  </div>
+  </body>
