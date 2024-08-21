@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Flexível</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #61bd8c;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 10;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px; 
+            height: 1920px; 
+        }
+        .left, .center, .right {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .left {
+            background: pink; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 25%;
+        }
+        .center {
+            background: green; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 50%;
+        }
+        .right {
+            background: pink; 
+            width: 100px;
+            height: 75%;
+            flex: 1 1 25%;
+        }
+        .footer {
+            background: #61bd8c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="content">
+        <div class="left">Esquerda</div>
+        <div class="center">Centro</div>
+        <div class="right">Direita</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
