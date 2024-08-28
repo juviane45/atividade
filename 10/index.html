@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo Colorido</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                red 0% 25%,
+                green 25% 50%,
+                blue 50% 75%,
+                yellow 75% 100%
+            );
+            margin: 50px auto;
+        }
+        .box {
+            width: 400px;
+            height: 400px;
+            border-radius: 180px;
+            margin: 50px auto;
+        }
+        .red {
+            width:50px;
+            height: 50px;
+            border-radius: 180px 10px 180px 180px;
+            background: red;
+            margin: 60px auto;
+        }
+        .larj {
+            width:50px;
+            height: 50px;
+            border-radius:10px 180px 120px;
+            background: orange;
+            margin: -110px 225px;
+        
+        }
+        .green {
+            width:  50px;
+            height: 50px;
+            border-radius: 120px 180px 10px 180px;
+            background: green;
+            margin: 10px 175px;
+        }
+        .rox {
+            width:50px;
+            height: 50px;
+            border-radius:180px 120px 180px 10px;
+            background: purple;
+            margin: -60px 225px;
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <p></p>
+    <div class="box">
+      <div class="red"></div>
+      <div class="larj"></div>
+      <div class="green"></div>
+      <div class="rox"></div>
+    </div>
+</body>
+</html>
